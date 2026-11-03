@@ -1,0 +1,188 @@
+<div style="font-family: 'IBM Plex Sans Thai', sans-serif; color: #2E3236; background: #FFFFFF; min-height: 100vh">
+
+<div style="background: #2E3236; color: #C9CDD1; font-size: 14px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; flex-wrap: wrap; gap: 6px 20px"><span class="tophours" style="white-space: nowrap"><span class="tophlabel">เปิดทำการ </span>วันจันทร์ – วันศุกร์&nbsp; 08.00 – 17.00 น. · วันเสาร์&nbsp; 08.00 – 13.00 น.</span><span class="topaddr">&nbsp; &nbsp;ถ.นิมิตใหม่ อ.ลำลูกกา จ.ปทุมธานี</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px 20px">
+<a href="tel:0811043733" style="color: #FFFFFF; text-decoration: none">โทร. 081-104-3733</a>
+<a href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #C9CDD1; text-decoration: none; display: inline-flex; align-items: center; gap: 6px"><img decoding="async" src="/images/icon-line.webp" alt="LINE" width="18" height="18" style="width: 18px; height: 18px; display: block; flex-shrink: 0; border-radius: 4px">LINE: @skg.steel</a>
+</div>
+</div>
+</div>
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E2E4E6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
+<a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #2E3236">
+<img decoding="async" src="/images/logo-skg.webp" alt="SKG" style="height: 52px; width: auto; display: block">
+<div style="display: flex; flex-direction: column; line-height: 1.2">
+<span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 25px">สหเจริญกิจ สตีล กรุ๊ป</span>
+<span style="font-size: 14px; font-weight: 600; color: #4A4F55; letter-spacing: 0.5px">SAHACHAROENKIT STEEL GROUP</span>
+</div>
+</a>
+<nav class="nav" aria-label="เมนูหลัก" style="display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: center; font-weight: 500; font-size: 16px">
+<a href="/" style="color: {{accent}}; text-decoration: none; padding: 10px 0; border-bottom: 2px solid {{accent}}">หน้าแรก</a>
+<a href="/products" style="color: #2E3236; text-decoration: none; padding: 10px 0">สินค้า</a>
+<a href="/about" style="color: #2E3236; text-decoration: none; padding: 10px 0">เกี่ยวกับเรา</a>
+<a href="/about#service" style="color: #2E3236; text-decoration: none; padding: 10px 0">บริการจัดส่ง</a>
+<a href="/contact" style="color: #2E3236; text-decoration: none; padding: 10px 0">ติดต่อเรา</a>
+<a class="navcta" href="/contact" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; padding: 12px 22px; font-weight: 600">ขอใบเสนอราคา</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" style="background: #2E3236; color: #FFFFFF; position: relative; overflow: hidden; min-height: 508px">
+<div class="heroimg" aria-roledescription="carousel" aria-label="รูปบรรยากาศ SKG" style="position: absolute; top: 0; right: 0; bottom: 0; width: 70%; height: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.04) 8%, rgba(0,0,0,0.12) 16%, rgba(0,0,0,0.26) 25%, rgba(0,0,0,0.44) 34%, rgba(0,0,0,0.63) 43%, rgba(0,0,0,0.8) 52%, rgba(0,0,0,0.92) 61%, #000 72%); mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.04) 8%, rgba(0,0,0,0.12) 16%, rgba(0,0,0,0.26) 25%, rgba(0,0,0,0.44) 34%, rgba(0,0,0,0.63) 43%, rgba(0,0,0,0.8) 52%, rgba(0,0,0,0.92) 61%, #000 72%)">
+<div class="track {{snapCls}}" style="display: flex; width: 100%; height: 100%; transform: translateX({{slideX}}%)">
+<template data-sc="for" list="{{slides}}" as="s" hint-placeholder-count="5">
+<img decoding="async" class="{{s.cls}}" src="{{s.src}}" alt="{{s.alt}}" style="flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; display: block">
+</template>
+</div>
+</div>
+<div class="herodots" style="position: absolute; right: 24px; bottom: 20px; z-index: 2; display: flex; gap: 8px; align-items: center">
+<template data-sc="for" list="{{dots}}" as="d" hint-placeholder-count="4">
+<button type="button" onClick="{{d.pick}}" aria-label="{{d.label}}" aria-pressed="{{d.on}}" style="{{d.style}}"></button>
+</template>
+</div>
+<div class="herotext" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center; min-height: 508px; box-sizing: border-box">
+<div style="flex: 0 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<h1 class="herotitle" style="margin: 0; font-family: Kanit, sans-serif; font-weight: 700; font-size: 72px; line-height: 1.1; width: 100%; max-width: 571px"><span class="hl hl1">เหล็กดี</span> <br><span class="hl hl2">ราคาถูก</span> <br><span class="hl hl3">จัดส่งไว</span></h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #DADDE0; max-width: 520px">จำหน่ายเหล็กก่อสร้างและเหล็กรูปพรรณ <span style="white-space: nowrap">ได้มาตรฐาน มอก.</span><br class="dbr"> <span style="white-space: nowrap">ทั้งปลีกและส่ง</span> <span class="mblock">พร้อมบริการจัดส่งถึงหน้างาน</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btnred" href="/contact" style="background: {{accent}}; color: #FFFFFF; text-decoration: none; padding: 16px 28px; font-weight: 600; font-size: 17px">ขอใบเสนอราคา</a>
+<a class="btnghost" href="/products" style="border: 1px solid #8A9096; color: #FFFFFF; text-decoration: none; padding: 15px 28px; font-weight: 500; font-size: 17px">ดูสินค้าทั้งหมด</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="border-bottom: 1px solid #E2E4E6">
+<div class="stats" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))">
+<div style="padding: 28px 20px 28px 0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 30px; color: {{accent}}">30+ ปี</span><span style="color: #4A4F55">ประสบการณ์ในธุรกิจเหล็ก</span></div>
+<div style="padding: 28px 20px; display: flex; flex-direction: column; gap: 4px; border-left: 1px solid #E2E4E6"><span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 30px; color: {{accent}}">มอก.</span><span style="color: #4A4F55">สินค้าได้มาตรฐาน</span></div>
+<div style="padding: 28px 20px; display: flex; flex-direction: column; gap: 4px; border-left: 1px solid #E2E4E6"><span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 30px; color: rgb(168, 1, 1)">ปลีก &amp; ส่ง</span><span style="color: rgb(74, 79, 85)">ในราคาคุ้มค่าทุกการสั่งซื้อ</span></div>
+<div style="padding: 28px 20px; display: flex; flex-direction: column; gap: 4px; border-left: 1px solid #E2E4E6"><span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 30px; color: rgb(168, 1, 1)">จัดส่งไว</span><span style="color: rgb(74, 79, 85)">ด้วยรถขนส่งของบริษัทเอง</span></div>
+</div>
+</section>
+
+<section style="background: #F4F5F6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div class="cathead" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="color: {{accent}}; font-weight: 600; letter-spacing: 1px; font-size: 14px">หมวดสินค้า</span>
+<h2 style="margin: 0; font-family: Kanit, sans-serif; font-weight: 600; font-size: 40px">มองหาสินค้าไหน</h2>
+</div>
+<a class="catall" href="/products" style="font-weight: 600; text-decoration: none">ดูสินค้าทั้งหมด →</a>
+</div>
+<div class="catgrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
+<template data-sc="for" list="{{cats}}" as="c" hint-placeholder-count="12">
+<a href="/products" onClick="{{c.go}}" style="background: #FFFFFF; text-decoration: none; color: #2E3236; display: flex; flex-direction: column; border: 1px solid #E2E4E6; border-radius: 16px; overflow: hidden">
+<template data-sc="if" value="{{c.hasImg}}" hint-placeholder-val="{{false}}"><img loading="lazy" decoding="async" class="catimg" src="{{c.img}}" alt="{{c.name}}" style="width: 100%; aspect-ratio: 1 / 1; height: auto; object-fit: cover; display: block"></template>
+<template data-sc="if" value="{{c.noImg}}" hint-placeholder-val="{{true}}"><div class="ph catimg" style="aspect-ratio: 1 / 1; display: flex; align-items: flex-end; padding: 10px"><span style="font-size: 12px; color: #4A4F55; background: #FFFFFF; padding: 3px 8px">[รูปสินค้า]</span></div></template>
+<div class="catlabel" style="padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; gap: 8px">
+<span class="catname" style="font-family: Kanit, sans-serif; font-weight: 500; font-size: 19px">{{c.name}}</span>
+<span style="font-size: 13px; color: #4A4F55; white-space: nowrap">{{c.count}} รายการ</span>
+</div>
+</a>
+</template>
+</div>
+</div>
+</section>
+
+<section class="bestsec">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="color: {{accent}}; font-weight: 600; letter-spacing: 1px; font-size: 14px">สินค้าขายดี</span>
+<h2 style="margin: 0; font-family: Kanit, sans-serif; font-weight: 600; font-size: 40px">ตัวเด่น ตัวโดน</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px">
+<template data-sc="for" list="{{best}}" as="b" hint-placeholder-count="7">
+<div class="bestcard" style="background: {{accent}}; border-radius: 6px; padding: 4px; display: flex">
+<div style="flex: 1 1 auto; min-width: 0; background: #FFFFFF; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 140px; position: relative; background: #E6E8EA">
+<img loading="lazy" decoding="async" src="{{b.img}}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<span style="position: absolute; top: 12px; left: 12px; background: {{accent}}; color: #FFFFFF; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 8px">ขายดี</span>
+</div>
+<div style="padding: 18px; display: flex; flex-direction: column; gap: 6px; flex-grow: 1">
+<span style="font-size: 13px; color: #4A4F55">{{b.cat}}</span>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px"><span style="font-family: Kanit, sans-serif; font-weight: 500; font-size: 20px">{{b.spec}}</span><span style="font-size: 14px; color: #4A4F55; white-space: nowrap">{{b.meta}}</span></div>
+</div>
+<a class="bestq" href="/contact" onClick="{{b.ask}}" style="margin: 0 18px 18px; border-radius: 8px; text-align: center; border: 1px solid {{accent}}; background: #FFFFFF; color: {{accent}}; text-decoration: none; padding: 11px; font-weight: 600">สอบถามราคา</a>
+</div>
+</div>
+</template>
+</div>
+</div>
+</section>
+
+<section style="background: #F4F5F6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="color: {{accent}}; font-weight: 600; letter-spacing: 1px; font-size: 14px">สั่งซื้อง่าย</span>
+<h2 style="margin: 0; font-family: Kanit, sans-serif; font-weight: 600; font-size: 40px">สั่งเหล็กกับเรา ไม่ยุ่งยาก</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<div style="background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-family: Kanit, sans-serif; font-weight: 700; font-size: 44px; color: {{accent}}; line-height: 1">01</span><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 10px; background: #FBECEC; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A80101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14a8 8 0 0 1-8 8"></path><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"></path><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1"></path><path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10"></path><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path></svg></span></div><span style="font-family: Kanit, sans-serif; font-weight: 500; font-size: 21px">เลือกสินค้าและขนาด</span><span style="color: #4A4F55; line-height: 1.6">ดูรายการสินค้าและขนาดที่มีขายในหน้าสินค้า<br>หากไม่เจอในรายการ สามารถสอบถามทางร้านได้</span></div>
+<div style="background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-family: Kanit, sans-serif; font-weight: 700; font-size: 44px; color: rgb(168, 1, 1); line-height: 1">02</span><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 10px; background: #FBECEC; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A80101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path><path d="M9 11h6"></path><path d="M9 14h4"></path></svg></span></div><span style="font-family: Kanit, sans-serif; font-weight: 500; font-size: 21px">ขอราคา</span><span style="color: rgb(74, 79, 85); line-height: 1.6">โทรสอบถาม หรือติดต่อทาง LINE แจ้งรายการและจำนวน</span></div>
+<div style="background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px"><div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-family: Kanit, sans-serif; font-weight: 700; font-size: 44px; color: rgb(168, 1, 1); line-height: 1">03</span><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 10px; background: #FBECEC; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A80101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1z"></path><path d="M14 9h4.5l3.5 3.5V16h-8z"></path><circle cx="5.5" cy="17.5" r="2"></circle><circle cx="17.5" cy="17.5" r="2"></circle></svg></span></div><span style="font-family: Kanit, sans-serif; font-weight: 500; font-size: 21px">รอรับสินค้า</span><span style="color: rgb(74, 79, 85); line-height: 1.6">ยืนยันการสั่งซื้อ แล้วรอรับสินค้าด้วยรถขนส่ง<br>ของบริษัท</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span style="color: {{accent}}; font-weight: 600; letter-spacing: 1px; font-size: 14px">แวะมาที่ร้าน</span>
+<h2 class="shopname" style="margin: 0; font-family: Kanit, sans-serif; font-weight: 600; font-size: 40px; width: 565px; height: 53px">บริษัท สหเจริญกิจ สตีล กรุ๊ป จำกัด</h2>
+<p class="shopaddr" style="margin: 0; line-height: 1.7; color: #4A4F55; width: 567px; height: 67px; font-size: 17px; text-align: justify">139 หมู่ที่ 21 ถนนนิมิตใหม่ ตำบลลำลูกกา <span class="addr2">อำเภอลำลูกกา จังหวัดปทุมธานี 12150</span></p><div style="display: flex; flex-direction: column; gap: 8px; font-size: 17px"><span class="shophours" style="display: grid; grid-template-columns: auto auto 1fr; column-gap: 12px; row-gap: 2px; white-space: nowrap"><b style="grid-row: 1 / span 2">เวลาทำการ</b><span>วันจันทร์ – วันศุกร์</span><span>08.00 – 17.00 น.</span><span>วันเสาร์</span><span>08.00 – 13.00 น.</span></span><span><b>โทร</b> 081-104-3733 · 02-993-0166</span><span><b>อีเมล</b> skg.steelgroup1995@gmail.com</span></div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://maps.app.goo.gl/96X5Uw675Jx8VmhF6" target="_blank" rel="noopener" style="background: #2E3236; color: #FFFFFF; text-decoration: none; padding: 14px 24px; font-weight: 600">เปิด Google Maps</a>
+<a href="tel:0811043733" style="border: 1px solid #2E3236; color: #2E3236; text-decoration: none; padding: 13px 24px; font-weight: 600">โทรหาเรา</a>
+</div>
+</div>
+<div class="mapbox" style="flex: 1 1 520px; min-width: 0; min-height: 340px; background: #EEF0F1; border: 1px solid #E2E4E6; overflow: hidden"><iframe title="แผนที่ร้าน สหเจริญกิจ สตีล กรุ๊ป" src="https://maps.google.com/maps?q=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97+%E0%B8%AA%E0%B8%AB%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%81%E0%B8%B4%E0%B8%88+%E0%B8%AA%E0%B8%95%E0%B8%B5%E0%B8%A5+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B+%E0%B8%96.%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+%E0%B8%A5%E0%B8%B3%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%81%E0%B8%B2+%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5&amp;hl=th&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="border: 0; width: 100%; height: 100%; min-height: 340px; display: block"></iframe></div>
+</div>
+</section>
+
+<section style="background: {{accent}}; color: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 32px">ต้องการเหล็กล็อตต่อไป?</span><span style="font-size: 17px; color: rgb(255, 227, 227)">แจ้งรายการ รู้ราคาเร็ว ส่งถึงหน้างาน</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="/contact" style="background: rgb(255, 255, 255); color: rgb(168, 1, 1); text-decoration: none; padding: 15px 28px; font-weight: 600">ขอใบเสนอราคา</a><a href="tel:0811043733" style="border: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); text-decoration: none; padding: 14px 28px; font-weight: 600">โทร. 081-104-3733</a></div>
+</div>
+</section>
+
+<footer style="background: #2E3236; color: #C9CDD1; font-size: 15px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 28px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px; height: 166px">
+<span style="font-family: Kanit, sans-serif; font-weight: 600; font-size: 20px; color: #FFFFFF; line-height: 24px">บริษัท สหเจริญกิจ สตีล กรุ๊ป จำกัด</span>
+<span>SAHACHAROENKIT STEEL GROUP CO.,LTD</span>
+<span style="line-height: 1.6">139 หมู่ที่ 21 ถ.นิมิตใหม่ ต.ลำลูกกา อ.ลำลูกกา จ.ปทุมธานี 12150</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-weight: 600; color: #FFFFFF; line-height: 24px">เมนู</span>
+<a href="/products" style="color: #C9CDD1; text-decoration: none">สินค้า</a>
+<a href="/about" style="color: #C9CDD1; text-decoration: none">เกี่ยวกับเรา</a>
+<a href="/about#service" style="color: #C9CDD1; text-decoration: none">บริการจัดส่ง</a>
+<a href="/contact" style="color: #C9CDD1; text-decoration: none">ติดต่อเรา</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 600; color: rgb(255, 255, 255); line-height: 24px">ติดต่อ</span><span>081-104-3733</span><span>02-993-0166</span><span>skg.steelgroup1995@gmail.com</span></div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-weight: 600; color: #FFFFFF; line-height: 24px">ติดตามเรา</span>
+<a href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #C9CDD1; text-decoration: none"><img loading="lazy" decoding="async" src="/images/icon-line.webp" alt="LINE" width="24" height="24" style="width: 24px; height: 24px; display: block; flex-shrink: 0; border-radius: 5px"><span>LINE: @skg.steel</span></a><a href="https://www.instagram.com/skg.steel/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #C9CDD1; text-decoration: none"><img loading="lazy" decoding="async" src="/images/icon-instagram.webp" alt="Instagram" width="24" height="24" style="width: 24px; height: 24px; display: block; flex-shrink: 0; border-radius: 5px"><span>Instagram: @skg.steel</span></a><a href="https://www.facebook.com/profile.php?id=61595573434478" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #C9CDD1; text-decoration: none"><img loading="lazy" decoding="async" src="/images/icon-facebook.webp" alt="Facebook" width="24" height="24" style="width: 24px; height: 24px; display: block; flex-shrink: 0; border-radius: 5px"><span>Facebook: SKG Steel</span></a>
+</div>
+</div>
+<div style="border-top: 1px solid #4A4F55; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 13px">
+<span>© 2569 บริษัท สหเจริญกิจ สตีล กรุ๊ป จำกัด</span>
+<a href="/privacy" style="color: #C9CDD1; text-decoration: underline">นโยบายความเป็นส่วนตัว</a>
+</div>
+</div>
+</footer>
+
+<nav class="mbar" aria-label="ติดต่อด่วน" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #2E3236; font-weight: 600; font-size: 16px; text-align: center">
+<a class="mbcall" href="tel:0811043733" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px">โทร</a>
+<a class="mbline" href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: #06A64A">LINE</a>
+<a class="mbq" href="/contact" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: {{accent}}">ขอราคา</a>
+</nav>
+
+</div>

@@ -1,0 +1,13 @@
+html,body{background:#FFFFFF;color:#2E3236}
+.wip{display:none !important}
+header a > div > span{white-space:nowrap}
+@media (max-width: 720px){
+header a > img{height:42px !important}
+header a{gap:10px !important;min-width:0}
+header a > div > span:first-child{font-size:20px !important}
+header a > div > span:last-child{font-size:11px !important;letter-spacing:0.2px !important}
+}
+@media (max-width: 360px){
+header a > div > span:first-child{font-size:18px !important}
+header a > div > span:last-child{font-size:10px !important}
+}
