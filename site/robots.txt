@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skg-steel.vercel.app/sitemap.xml
+Sitemap: https://skgsteel.com/sitemap.xml

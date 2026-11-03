@@ -34,7 +34,7 @@ node tools/prerender.mjs    # เติม HTML ล่วงหน้า (SEO) �
 1. push repo นี้ขึ้น GitHub
 2. vercel.com → Add New → Project → เลือก repo → Framework Preset: **Other** → Deploy
    (`vercel.json` ตั้ง `outputDirectory: site` และ clean URLs ไว้แล้ว)
-3. ได้โดเมนแล้ว แก้ `siteUrl` ใน `src/site.json` แล้ว build ใหม่ (ใช้ใน canonical, Open Graph, sitemap)
+3. โดเมนปัจจุบัน: https://skgsteel.com — ถ้าเปลี่ยนโดเมน แก้ `siteUrl` ใน `src/site.json` แล้ว build ใหม่ (ใช้ใน canonical, Open Graph, sitemap)
 
 ## ฟอร์มขอใบเสนอราคา
 
