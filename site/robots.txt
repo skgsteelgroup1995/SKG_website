@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skgsteel.com/sitemap.xml
+Sitemap: https://www.skgsteel.com/sitemap.xml
