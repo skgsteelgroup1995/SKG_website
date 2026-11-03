@@ -42,7 +42,7 @@ LD = {"@context": "https://schema.org", "@type": "HardwareStore", "name": "บ�
       "alternateName": ["SKG Steel", "SAHACHAROENKIT STEEL GROUP CO.,LTD"], "url": base + '/', "logo": base + '/icon-192.png', "image": base + '/og-image.jpg',
       "telephone": ["+66811043733", "+6629930166"], "email": "skg.steelgroup1995@gmail.com", "foundingDate": "1995",
       "address": {"@type": "PostalAddress", "streetAddress": "139 หมู่ที่ 21 ถนนนิมิตใหม่ ตำบลลำลูกกา", "addressLocality": "อำเภอลำลูกกา", "addressRegion": "ปทุมธานี", "postalCode": "12150", "addressCountry": "TH"},
-      "hasMap": "https://maps.app.goo.gl/96X5Uw675Jx8VmhF6",
+      "hasMap": "https://maps.app.goo.gl/seg3NwcKhmWYtKRW7",
       "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00"},
                                      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00"}],
       "sameAs": ["https://www.instagram.com/skg.steel/", "https://www.facebook.com/profile.php?id=61595573434478", "https://line.me/R/ti/p/@skg.steel"]}

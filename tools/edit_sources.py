@@ -10,7 +10,7 @@ for r in ['home', 'products', 'about', 'contact', 'privacy']:
     for a, b in LINKS.items():
         t = t.replace(f'href="{a}#', f'href="{b}#').replace(f'href="{a}"', f'href="{b}"')
     t = t.replace(' target="_top"', '')
-    t = t.replace('href="https://maps.app.goo.gl/96X5Uw675Jx8VmhF6"', 'href="https://maps.app.goo.gl/96X5Uw675Jx8VmhF6" target="_blank" rel="noopener"')
+    t = t.replace('href="https://maps.app.goo.gl/seg3NwcKhmWYtKRW7"', 'href="https://maps.app.goo.gl/seg3NwcKhmWYtKRW7" target="_blank" rel="noopener"')
     def lazy(m):
         tag = m.group(0)
         if 'loading=' in tag or any(e in tag for e in EAGER): return tag.replace('<img ', '<img decoding="async" ', 1) if 'decoding=' not in tag else tag
@@ -25,7 +25,7 @@ for r in ['home', 'products', 'about', 'contact', 'privacy']:
         t = re.sub(r'<div style="height: 240px; border-radius: 6px; border: 1px solid #E2E4E6; background-color: #EEF0F1;.*?นำทางด้วย Google Maps</a>\n</div>',
             '<div style="border-radius: 6px; border: 1px solid #E2E4E6; overflow: hidden; display: flex; flex-direction: column">\n<iframe title="แผนที่ร้าน สหเจริญกิจ สตีล กรุ๊ป" src="' + MAP_SRC + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="border: 0; width: 100%; height: 280px; display: block; background: #EEF0F1"></iframe>\n'
             '<div style="padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; background: #FFFFFF"><span style="display: flex; flex-direction: column; line-height: 1.4"><span style="font-weight: 600; color: #2E3236">สหเจริญกิจ สตีล กรุ๊ป</span><span style="font-size: 14px; color: #4A4F55">ถ.นิมิตใหม่ อ.ลำลูกกา</span></span>'
-            '<a href="https://maps.app.goo.gl/96X5Uw675Jx8VmhF6" target="_blank" rel="noopener" style="background: #2E3236; color: #FFFFFF; text-decoration: none; padding: 10px 18px; font-weight: 600; font-size: 14px">นำทางด้วย Google Maps</a></div>\n</div>', t, flags=re.S)
+            '<a href="https://maps.app.goo.gl/seg3NwcKhmWYtKRW7" target="_blank" rel="noopener" style="background: #2E3236; color: #FFFFFF; text-decoration: none; padding: 10px 18px; font-weight: 600; font-size: 14px">นำทางด้วย Google Maps</a></div>\n</div>', t, flags=re.S)
         # form: names for submission, error + sending states
         t = t.replace('<input id="nm" required=""', '<input id="nm" name="name" required=""')
         t = t.replace('<input id="ph" required=""', '<input id="ph" name="phone" required=""')
