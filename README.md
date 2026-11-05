@@ -8,7 +8,7 @@
 ```
 site/                 ← ไฟล์เว็บที่ deploy จริง (Vercel ใช้โฟลเดอร์นี้)
   index.html, products.html, about.html, contact.html, privacy.html
-  images/             ← รูป WebP (+ SVG แบบแปลนหน้าตัด) แยกออกจากต้นแบบ
+  images/             ← รูปต้นฉบับ (ไม่ย่อ ไม่บีบอัด) + SVG แบบแปลนหน้าตัด
   assets/             ← JS (ชื่อไฟล์มี hash, cache ได้ 1 ปี)
   sitemap.xml, robots.txt, og-image.jpg, favicon.ico, apple-touch-icon.png
 src/                  ← ต้นฉบับสำหรับแก้ไข

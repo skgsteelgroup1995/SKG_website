@@ -96,7 +96,7 @@ for r, p in cfg['pages'].items():
     url = base + (p['path'] if p['path'] != '/' else '/')
     extra = ''
     if r == 'home':
-        extra = '<link rel="preload" as="image" href="/images/hero-1-storefront.webp" fetchpriority="high">\n'
+        extra = '<link rel="preload" as="image" href="/images/hero-1-storefront.jpg" fetchpriority="high">\n'
         extra += '<script type="application/ld+json">' + json.dumps(LD, ensure_ascii=False) + '</script>\n'
     out = PAGE.format(title=html.escape(p['title']), desc=html.escape(p['description']), url=url, base=base, site=html.escape(cfg['siteName']),
                       extra=extra, css=css.strip(), gcss=glob_css, tpl=tpl, endpoint=json.dumps(cfg['formEndpoint']), runtime=runtime, pagejs=pagejs)

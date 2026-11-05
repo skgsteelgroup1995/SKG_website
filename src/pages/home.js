@@ -74,16 +74,16 @@ if (n < 0) this.snap = setTimeout(() => this.setState({ slide: 7, anim: 'none' }
 }
 renderVals() {
 const PICS = [
-{ src: '/images/hero-1-storefront.webp', alt: 'หน้าร้านบริษัท สหเจริญกิจ สตีล จำกัด ถนนนิมิตใหม่ ลำลูกกา' },
-{ src: '/images/hero-2-rebar-stock.webp', alt: 'กองเหล็กเส้นพร้อมส่งในคลัง SKG' },
-{ src: '/images/hero-3-wire-coils.webp', alt: 'ม้วนลวดและเหล็กเส้นกลมในคลัง SKG' },
-{ src: '/images/hero-4-wiremesh.webp', alt: 'แผงไวร์เมชพร้อมส่ง' },
-{ src: '/images/hero-5-tie-wire.webp', alt: 'ม้วนลวดผูกเหล็กพร้อมส่งในคลัง SKG' },
-{ src: '/images/hero-6-loading.webp', alt: 'เหล็กกล่อง ไวร์เมช และลวด เตรียมขึ้นรถขนส่ง' },
-{ src: '/images/hero-7-warehouse.webp', alt: 'สต็อกเหล็กหลากชนิดในโกดัง SKG' },
-{ src: '/images/hero-8-crane.webp', alt: 'รถเครนบรรทุกเหล็กในโกดัง SKG' }
+{ src: '/images/hero-1-storefront.jpg', alt: 'หน้าร้านบริษัท สหเจริญกิจ สตีล จำกัด ถนนนิมิตใหม่ ลำลูกกา' },
+{ src: '/images/hero-2-rebar-stock.jpg', pos: '50% 81%', alt: 'กองเหล็กเส้นพร้อมส่งในคลัง SKG' },
+{ src: '/images/hero-3-wire-coils.jpg', pos: '50% 0%', alt: 'ม้วนลวดและเหล็กเส้นกลมในคลัง SKG' },
+{ src: '/images/hero-4-wiremesh.jpg', alt: 'แผงไวร์เมชพร้อมส่ง' },
+{ src: '/images/hero-5-tie-wire.jpg', alt: 'ม้วนลวดผูกเหล็กพร้อมส่งในคลัง SKG' },
+{ src: '/images/hero-6-loading.jpg', alt: 'เหล็กกล่อง ไวร์เมช และลวด เตรียมขึ้นรถขนส่ง' },
+{ src: '/images/hero-7-warehouse.jpg', alt: 'สต็อกเหล็กหลากชนิดในโกดัง SKG' },
+{ src: '/images/hero-8-crane.jpg', pos: '50% 48%', alt: 'รถเครนบรรทุกเหล็กในโกดัง SKG' }
 ];
-const slides = [PICS[7]].concat(PICS, [PICS[0]]).map(p => ({ src: p.src, alt: p.alt, cls: p.cls || '' }));
+const slides = [PICS[7]].concat(PICS, [PICS[0]]).map(p => ({ src: p.src, alt: p.alt, cls: p.cls || '', pos: p.pos || '50% 50%' }));
 const cur = ((this.state.slide % 8) + 8) % 8;
 const dots = PICS.map((p, i) => ({
 label: 'รูปที่ ' + (i + 1), on: i === cur ? 'true' : 'false',
@@ -92,12 +92,12 @@ pick: () => { clearInterval(this.timer); this.go(i); this.timer = setInterval(()
 }));
 const slideX = -100 * (this.state.slide + 1);
 const snapCls = this.state.anim === 'none' ? 'snap' : (this.state.anim === 'fast' ? 'fast' : '');
-const IMG_REBAR = '/images/cat-deformed-bar.webp', IMG_ROUND = '/images/cat-round-bar.webp', IMG_BOX = '/images/cat-box-tube.webp', IMG_C = '/images/cat-c-channel.webp', IMG_WIRE = '/images/cat-tie-wire.webp';
+const IMG_REBAR = '/images/cat-deformed-bar.jpg', IMG_ROUND = '/images/cat-round-bar.jpg', IMG_BOX = '/images/cat-box-tube.jpg', IMG_C = '/images/cat-c-channel.jpg', IMG_WIRE = '/images/cat-tie-wire.jpg';
 const catsRaw = [
 {name:'เหล็กเส้นข้ออ้อย',count:8,img:IMG_REBAR},{name:'เหล็กเส้นกลม',count:4,img:IMG_ROUND},{name:'เหล็กกล่อง',count:27,img:IMG_BOX},
-{name:'เหล็กตัว C',count:13,img:IMG_C},{name:'เหล็กท่อดำ',count:15,img:'/images/cat-black-pipe.webp'},{name:'เหล็กฉาก',count:6,img:'/images/cat-angle.webp'},
-{name:'เหล็กแบน',count:4,img:'/images/cat-flat-bar.webp'},{name:'เหล็กแผ่น',count:2,img:'/images/cat-plate.webp'},{name:'ไวร์เมช',count:6,img:'/images/cat-wiremesh.webp'},
-{name:'เหล็กปลอก',count:2,img:'/images/cat-stirrup.webp'},{name:'ลวดผูกเหล็ก',count:1,img:IMG_WIRE},{name:'ตะปู',count:2,img:'/images/cat-nail.webp'}
+{name:'เหล็กตัว C',count:13,img:IMG_C},{name:'เหล็กท่อดำ',count:15,img:'/images/cat-black-pipe.jpg'},{name:'เหล็กฉาก',count:6,img:'/images/cat-angle.jpg'},
+{name:'เหล็กแบน',count:4,img:'/images/cat-flat-bar.jpg'},{name:'เหล็กแผ่น',count:2,img:'/images/cat-plate.jpg'},{name:'ไวร์เมช',count:6,img:'/images/cat-wiremesh.jpg'},
+{name:'เหล็กปลอก',count:2,img:'/images/cat-stirrup.jpg'},{name:'ลวดผูกเหล็ก',count:1,img:IMG_WIRE},{name:'ตะปู',count:2,img:'/images/cat-nail.jpg'}
 ];
 const cats = catsRaw.map((c, i) => ({ ...c, img: c.img || '', hasImg: !!c.img, noImg: !c.img, go: () => { try { sessionStorage.setItem('skgCat', 'c' + i); } catch (e) {} } }));
 const best = [
