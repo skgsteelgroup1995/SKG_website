@@ -38,7 +38,7 @@ if (o.ph) this.setState({ phone: o.ph });
 send(form) {
 if (this.state.sending) return;
 const v = (id) => ((form.querySelector('#' + id) || {}).value || '').trim();
-const data = { 'ชื่อ-นามสกุล': v('nm'), 'เบอร์โทรศัพท์': v('ph'), 'สถานที่จัดส่ง': v('dl') || '-', 'รายการสินค้าและจำนวน': v('it'), _subject: 'ขอใบเสนอราคาจากเว็บไซต์ – ' + v('nm'), _template: 'table', _captcha: 'false', _honey: '' };
+const data = { 'ชื่อ-นามสกุล': v('nm'), 'เบอร์โทรศัพท์': v('ph'), 'สถานที่จัดส่ง': v('dl') || '-', 'รายการสินค้าและจำนวน': v('it'), access_key: window.SKG_FORM_KEY, subject: 'ขอใบเสนอราคาจากเว็บไซต์ – ' + v('nm'), from_name: 'เว็บไซต์ skgsteel.com' };
 this.setState({ sending: true, error: false, phone: v('ph') });
 fetch(window.SKG_FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) })
 .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok || j.success === false || j.success === 'false') throw new Error((j.message || 'send failed') + ' [HTTP ' + r.status + ']'); }))

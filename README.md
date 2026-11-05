@@ -38,9 +38,9 @@ node tools/prerender.mjs    # เติม HTML ล่วงหน้า (SEO) �
 
 ## ฟอร์มขอใบเสนอราคา
 
-ส่งเข้าอีเมล `skg.steelgroup1995@gmail.com` ผ่าน [FormSubmit](https://formsubmit.co) (ฟรี ไม่ต้องสมัคร)
-**ครั้งแรก:** หลัง deploy ให้ลองส่งฟอร์ม 1 ครั้ง → FormSubmit จะส่งอีเมล "Activate Form" ไปที่กล่องอีเมลนี้ → กดยืนยัน
-หลังจากนั้นทุกคำขอจะเข้าอีเมลทันที (ถ้าจะเปลี่ยนเป็น Formspree/Resend แก้ `formEndpoint` ใน `src/site.json` และ `send()` ใน `src/pages/contact.js`)
+ส่งเข้าอีเมล `skg.steelgroup1995@gmail.com` ผ่าน [Web3Forms](https://web3forms.com) (ฟรี)
+จัดการได้ที่ app.web3forms.com (เข้าด้วยอีเมลร้าน) — Access Key อยู่ใน `formAccessKey` ของ `src/site.json`
+Access Key นี้เปิดเผยในหน้าเว็บได้ตามปกติ ใช้ได้แค่ส่งข้อความเข้าอีเมลร้าน
 
 ## แผนที่
 

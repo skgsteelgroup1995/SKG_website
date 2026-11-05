@@ -1,6 +1,7 @@
 {
   "siteUrl": "https://www.skgsteel.com",
-  "formEndpoint": "https://formsubmit.co/ajax/skg.steelgroup1995@gmail.com",
+  "formEndpoint": "https://api.web3forms.com/submit",
+  "formAccessKey": "ff8b14da-9914-49ed-b03b-da2bb7a555db",
   "siteName": "SKG สหเจริญกิจ สตีล กรุ๊ป",
   "pages": {
     "home": {

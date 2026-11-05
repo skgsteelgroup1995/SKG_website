@@ -81,7 +81,7 @@ PAGE = '''<!doctype html>
 <body>
 <div id="app"><!--PRERENDER--></div>
 <template id="tpl">{tpl}</template>
-<script>window.SKG_FORM_ENDPOINT = {endpoint};</script>
+<script>window.SKG_FORM_ENDPOINT = {endpoint}; window.SKG_FORM_KEY = {formkey};</script>
 <script src="{runtime}" defer></script>
 <script src="{pagejs}" defer></script>
 </body>
@@ -99,7 +99,7 @@ for r, p in cfg['pages'].items():
         extra = '<link rel="preload" as="image" href="/images/hero-1-storefront.jpg" fetchpriority="high">\n'
         extra += '<script type="application/ld+json">' + json.dumps(LD, ensure_ascii=False) + '</script>\n'
     out = PAGE.format(title=html.escape(p['title']), desc=html.escape(p['description']), url=url, base=base, site=html.escape(cfg['siteName']),
-                      extra=extra, css=css.strip(), gcss=glob_css, tpl=tpl, endpoint=json.dumps(cfg['formEndpoint']), runtime=runtime, pagejs=pagejs)
+                      extra=extra, css=css.strip(), gcss=glob_css, tpl=tpl, endpoint=json.dumps(cfg['formEndpoint']), formkey=json.dumps(cfg['formAccessKey']), runtime=runtime, pagejs=pagejs)
     fn = 'index.html' if r == 'home' else f'{r}.html'
     # keep a previous prerender if present
     old = f'{S}/{fn}'
