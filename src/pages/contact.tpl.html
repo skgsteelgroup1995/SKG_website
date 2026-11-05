@@ -55,7 +55,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="nm" style="font-weight: 500">ชื่อ-นามสกุล</label>
-<input id="nm" name="name" required="" type="text" autocomplete="name" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="nm" name="name" required="" type="text" autocomplete="name" onInput="{{onField}}" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ph" style="font-weight: 500">เบอร์โทรศัพท์</label>
@@ -64,7 +64,7 @@
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="dl" style="font-weight: 500">สถานที่จัดส่ง <span style="font-weight: 400; color: #4A4F55; font-size: 14px">(ส่งที่ไหน)</span></label>
-<input id="dl" name="delivery" type="text" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="dl" name="delivery" type="text" onInput="{{onField}}" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="it" style="font-weight: 500">รายการสินค้าและจำนวน ที่สนใจขอราคา</label>
@@ -72,7 +72,7 @@
 <a href="/products" style="align-self: flex-start; color: {{accent}}; font-weight: 600; font-size: 15px; text-decoration: none; padding: 6px 0">+ ดูรายการสินค้าอื่นเพิ่มเติม</a>
 </div>
 <span style="font-size: 13px; color: #4A4F55; line-height: 1.6">ข้อมูลของท่านใช้เพื่อติดต่อกลับเรื่องใบเสนอราคาเท่านั้น ตาม<a href="/privacy" style="color: #4A4F55; text-decoration: underline">นโยบายความเป็นส่วนตัว</a></span>
-<template data-sc="if" value="{{error}}" hint-placeholder-val="{{false}}"><div role="alert" style="background: #FBECEC; border: 1px solid #E8A3A3; color: #7A0000; padding: 14px 16px; line-height: 1.6">ส่งข้อมูลไม่สำเร็จ กรุณาลองใหม่อีกครั้ง หรือโทร <a href="tel:0811043733" style="color: #7A0000; font-weight: 600">081-104-3733</a> / LINE <a href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #7A0000; font-weight: 600">@skg.steel</a></div></template>
+<template data-sc="if" value="{{error}}" hint-placeholder-val="{{false}}"><div role="alert" style="background: #FBECEC; border: 1px solid #E8A3A3; color: #7A0000; padding: 14px 16px; line-height: 1.6">ส่งข้อมูลไม่สำเร็จ กรุณาลองใหม่อีกครั้ง หรือโทร <a href="tel:0811043733" style="color: #7A0000; font-weight: 600">081-104-3733</a> / LINE <a href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #7A0000; font-weight: 600">@skg.steel</a><span style="display: block; margin-top: 6px; font-size: 12px; color: #4A4F55; word-break: break-word">รายละเอียด: {{errMsg}}</span></div></template>
 <button class="sendq" type="submit" disabled="{{sending}}" aria-busy="{{sending}}" style="opacity: {{btnOpacity}}; font: inherit; font-size: 17px; font-weight: 600; background: {{accent}}; color: #FFFFFF; border: none; padding: 15px 28px; cursor: pointer; align-self: flex-start; min-height: 48px">{{btnLabel}}</button>
 </form>
 </template>
