@@ -148,20 +148,20 @@ html{scroll-behavior:smooth}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="nm" style="font-weight: 500">ชื่อ-นามสกุล</label>
-<input id="nm" name="name" required="" type="text" autocomplete="name" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="nm" name="name" required="" type="text" autocomplete="name" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ph" style="font-weight: 500">เบอร์โทรศัพท์</label>
-<input id="ph" name="phone" required="" type="tel" autocomplete="tel" placeholder="08x-xxx-xxxx" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="ph" name="phone" required="" type="tel" autocomplete="tel" placeholder="08x-xxx-xxxx" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="dl" style="font-weight: 500">สถานที่จัดส่ง <span style="font-weight: 400; color: #4A4F55; font-size: 14px">(ส่งที่ไหน)</span></label>
-<input id="dl" name="delivery" type="text" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="dl" name="delivery" type="text" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="it" style="font-weight: 500">รายการสินค้าและจำนวน ที่สนใจขอราคา</label>
-<textarea id="it" name="items" required="" rows="5" placeholder="เช่น เหล็กกล่อง 2&quot; x 2&quot; หนา 2.3 มม. จำนวน 20 เส้น" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236; resize: none; overflow: hidden; box-sizing: border-box"></textarea>
+<textarea id="it" name="items" required="" rows="5" placeholder="เช่น เหล็กกล่อง 2&quot; x 2&quot; หนา 2.3 มม. จำนวน 20 เส้น" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236; resize: none; overflow: hidden; box-sizing: border-box"></textarea>
 <a href="/products" style="align-self: flex-start; color: #A80101; font-weight: 600; font-size: 15px; text-decoration: none; padding: 6px 0">+ ดูรายการสินค้าอื่นเพิ่มเติม</a>
 </div>
 <span style="font-size: 13px; color: #4A4F55; line-height: 1.6">ข้อมูลของท่านใช้เพื่อติดต่อกลับเรื่องใบเสนอราคาเท่านั้น ตาม<a href="/privacy" style="color: #4A4F55; text-decoration: underline">นโยบายความเป็นส่วนตัว</a></span>
@@ -206,7 +206,7 @@ html{scroll-behavior:smooth}
 </div>
 </footer>
 
-<nav class="mbar" aria-label="ติดต่อด่วน" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #2E3236; font-weight: 600; font-size: 16px; text-align: center">
+<nav class="mbar" aria-label="ติดต่อด่วน" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #2E3236; font-weight: 600; font-size: 19px; text-align: center">
 <a class="mbcall" href="tel:0811043733" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px">โทร</a>
 <a class="mbline" href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: #06A64A">LINE</a>
 <a class="mbq" href="/contact" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: #A80101">ขอราคา</a>
@@ -270,20 +270,20 @@ html{scroll-behavior:smooth}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="nm" style="font-weight: 500">ชื่อ-นามสกุล</label>
-<input id="nm" name="name" required="" type="text" autocomplete="name" onInput="{{onField}}" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="nm" name="name" required="" type="text" autocomplete="name" onInput="{{onField}}" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ph" style="font-weight: 500">เบอร์โทรศัพท์</label>
-<input id="ph" name="phone" required="" type="tel" autocomplete="tel" placeholder="08x-xxx-xxxx" onInput="{{onPhone}}" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="ph" name="phone" required="" type="tel" autocomplete="tel" placeholder="08x-xxx-xxxx" onInput="{{onPhone}}" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="dl" style="font-weight: 500">สถานที่จัดส่ง <span style="font-weight: 400; color: #4A4F55; font-size: 14px">(ส่งที่ไหน)</span></label>
-<input id="dl" name="delivery" type="text" onInput="{{onField}}" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236">
+<input id="dl" name="delivery" type="text" onInput="{{onField}}" autocomplete="street-address" placeholder="เช่น ลำลูกกา ปทุมธานี / รับเองที่ร้าน" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="it" style="font-weight: 500">รายการสินค้าและจำนวน ที่สนใจขอราคา</label>
-<textarea id="it" name="items" onInput="{{onItems}}" required="" rows="5" placeholder="เช่น เหล็กกล่อง 2&quot; x 2&quot; หนา 2.3 มม. จำนวน 20 เส้น" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BDC2; background: #FFFFFF; color: #2E3236; resize: none; overflow: hidden; box-sizing: border-box"></textarea>
+<textarea id="it" name="items" onInput="{{onItems}}" required="" rows="5" placeholder="เช่น เหล็กกล่อง 2&quot; x 2&quot; หนา 2.3 มม. จำนวน 20 เส้น" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #8A9096; background: #FFFFFF; color: #2E3236; resize: none; overflow: hidden; box-sizing: border-box"></textarea>
 <a href="/products" style="align-self: flex-start; color: {{accent}}; font-weight: 600; font-size: 15px; text-decoration: none; padding: 6px 0">+ ดูรายการสินค้าอื่นเพิ่มเติม</a>
 </div>
 <span style="font-size: 13px; color: #4A4F55; line-height: 1.6">ข้อมูลของท่านใช้เพื่อติดต่อกลับเรื่องใบเสนอราคาเท่านั้น ตาม<a href="/privacy" style="color: #4A4F55; text-decoration: underline">นโยบายความเป็นส่วนตัว</a></span>
@@ -328,7 +328,7 @@ html{scroll-behavior:smooth}
 </div>
 </footer>
 
-<nav class="mbar" aria-label="ติดต่อด่วน" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #2E3236; font-weight: 600; font-size: 16px; text-align: center">
+<nav class="mbar" aria-label="ติดต่อด่วน" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #2E3236; font-weight: 600; font-size: 19px; text-align: center">
 <a class="mbcall" href="tel:0811043733" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px">โทร</a>
 <a class="mbline" href="https://line.me/R/ti/p/@skg.steel" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: #06A64A">LINE</a>
 <a class="mbq" href="/contact" style="color: #FFFFFF; text-decoration: none; padding: 16px 8px; background: {{accent}}">ขอราคา</a>
