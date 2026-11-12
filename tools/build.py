@@ -55,7 +55,7 @@ PAGE = '''<!doctype html>
 <meta name="format-detection" content="telephone=no, email=no, address=no">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="{url}">
+{robots}<link rel="canonical" href="{url}">
 <meta name="theme-color" content="#A80101">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="th_TH">
@@ -98,13 +98,14 @@ for r, p in cfg['pages'].items():
     if r == 'home':
         extra = '<link rel="preload" as="image" href="/images/hero-1-storefront.jpg" fetchpriority="high">\n'
         extra += '<script type="application/ld+json">' + json.dumps(LD, ensure_ascii=False) + '</script>\n'
-    out = PAGE.format(title=html.escape(p['title']), desc=html.escape(p['description']), url=url, base=base, site=html.escape(cfg['siteName']),
+    robots = '<meta name="robots" content="noindex, follow">\n' if p.get('noindex') else ''
+    out = PAGE.format(robots=robots, title=html.escape(p['title']), desc=html.escape(p['description']), url=url, base=base, site=html.escape(cfg['siteName']),
                       extra=extra, css=css.strip(), gcss=glob_css, tpl=tpl, endpoint=json.dumps(cfg['formEndpoint']), formkey=json.dumps(cfg['formAccessKey']), runtime=runtime, pagejs=pagejs)
     fn = 'index.html' if r == 'home' else f'{r}.html'
     # keep a previous prerender if present
     old = f'{S}/{fn}'
     open(old, 'w', encoding='utf-8').write(out)
-    urls.append((url, '1.0' if r == 'home' else ('0.3' if r == 'privacy' else '0.8')))
+    if not p.get('noindex'): urls.append((url, '1.0' if r == 'home' else '0.8'))
 open(f'{S}/sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     ''.join(f'  <url><loc>{u}</loc><priority>{pr}</priority></url>\n' for u, pr in urls) + '</urlset>\n')
 open(f'{S}/robots.txt', 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n')
