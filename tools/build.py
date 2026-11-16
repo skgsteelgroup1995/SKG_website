@@ -84,6 +84,7 @@ PAGE = '''<!doctype html>
 <script>window.SKG_FORM_ENDPOINT = {endpoint}; window.SKG_FORM_KEY = {formkey};</script>
 <script src="{runtime}" defer></script>
 <script src="{pagejs}" defer></script>
+<script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
 '''
