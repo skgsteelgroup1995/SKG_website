@@ -77,7 +77,8 @@ section > .herotext{min-height:0 !important;padding-top:4px !important;padding-b
 .cathead{flex-wrap:nowrap !important;gap:8px !important}
 .cathead h2{white-space:nowrap}
 .catall{font-size:14px;white-space:nowrap;padding-bottom:6px}
-.catlabel{flex-direction:column !important;align-items:flex-start !important;gap:2px !important;padding:12px !important}
+.catlabel{padding:12px !important;gap:6px !important;align-items:baseline !important}
+.catunit{display:none}
 .catname{font-size:clamp(14px,4.3vw,17px) !important;white-space:nowrap}
 .mbar{display:grid !important}
 footer{padding-bottom:64px}
