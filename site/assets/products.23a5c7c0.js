@@ -36,7 +36,7 @@ const PRODUCT_SHOTS = { c0: 1, c1: 1, c2: 1, c3: 1, c4: 1, c5: 1, c6: 1, c7: 1, 
 const photoFit = PRODUCT_SHOTS[cur.id] ? 'contain' : 'cover';
 const PHOTOS = { c0: '/images/cat-deformed-bar.jpg', c1: '/images/cat-round-bar.jpg', c2: '/images/cat-box-tube.jpg', c3: '/images/cat-c-channel.jpg', c4: '/images/cat-black-pipe.jpg', c5: '/images/cat-angle.jpg', c6: '/images/cat-flat-bar.jpg', c7: '/images/cat-plate.jpg', c8: '/images/cat-wiremesh.jpg', c9: '/images/cat-stirrup.jpg', c10: '/images/cat-tie-wire.jpg', c11: '/images/cat-nail.jpg' };
 const photo = q ? '' : (PHOTOS[cur.id] || '');
-const DWG = { c2: ['/images/dwg-box-tube.svg', 'B = ด้านกว้าง · H = ด้านสูง · t = ความหนา'], c3: ['/images/dwg-c-channel.svg', 'H = ความสูง · B = ปีก · C = ขอบพับ · t = ความหนา'], c4: ['/images/dwg-black-pipe.svg', 'D = เส้นผ่านศูนย์กลาง · t = ความหนา'], c5: ['/images/dwg-angle.svg', 'H, B = ความยาวขา · t = ความหนา'], c6: ['/images/dwg-flat-bar.svg', 'b = ความกว้าง · t = ความหนา'] };
+const DWG = { c3: ['/images/dwg-c-channel.svg', 'H = ความสูง · B = ปีก · C = ขอบพับ · t = ความหนา'] };
 const dw = q ? null : DWG[cur.id];
 return {
 photo, photoFit, hasPhoto: !!photo, noPhoto: !photo && !q,
