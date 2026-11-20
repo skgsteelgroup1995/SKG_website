@@ -41,6 +41,7 @@ return {
 photo, photoFit, hasPhoto: !!photo, noPhoto: !photo && !q,
 hasDwg: !!dw, dwg: dw ? dw[0] : '', dwgCap: dw ? dw[1] : '', dwgAlt: dw ? ('หน้าตัด' + cur.name + ' ' + dw[1]) : '',
 accent, cats, cur, rows, title, q: this.state.q, notSearch: !q,
+colTitle: !q && cur.id === 'c3' ? 'รายการสินค้า (H x B x C)' : 'รายการสินค้า',
 empty: rows.length === 0,
 shownLabel: q ? ('พบ ' + rows.length + ' จากทั้งหมด ' + total + ' รายการ') : (cur.items.length + ' รายการ'),
 onSearch: (e) => this.setState({ q: e.target.value }),
